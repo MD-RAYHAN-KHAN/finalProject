@@ -4,8 +4,7 @@ import mongoose from "mongoose";
 const doctorSchema = new mongoose.Schema({
     doctorname:{
         type:String,
-        require:true,
-        trim:true
+        require:true
     },
     email:{
         type:String,

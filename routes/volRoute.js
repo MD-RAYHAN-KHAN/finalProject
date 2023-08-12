@@ -1,5 +1,5 @@
 import express from "express";
-import { volRegisterController } from "../controllers/regVolController.js"
+import { volRegisterController } from "../controllers/volController.js"
 
 //router object create
 const router = express.Router()

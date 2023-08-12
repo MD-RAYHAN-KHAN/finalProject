@@ -16,14 +16,15 @@ const userSchema = new mongoose.Schema({
         type:String,
         require:true,
     },
-    repassword:{
-        type:String,
-        require:true,
-    },
     phone:{
         type:String,
         require:true,
     },
+    gender: {
+        type: String,
+        enum: ['male', 'female', 'other'], // Assuming these are the possible values
+        required: true,
+    }
     
 },{timestamps:true})
 export default mongoose.model('users',userSchema);
